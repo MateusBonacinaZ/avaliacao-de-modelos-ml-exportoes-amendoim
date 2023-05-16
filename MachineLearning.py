@@ -99,11 +99,11 @@ class MachineLearning:
                 f"-> Média de RMSE: {model['rmse_average']} \n\n")
 
     def show_graphs(self, scores, data):
-        # self.graphics_export(data)
-        # self.graphics_seasonality_and_trend(data)
-        # self.graphics_performance_models(scores)
+        self.graphics_export(data)
+        self.graphics_seasonality_and_trend(data)
+        self.graphics_performance_models(scores)
         self.graphics_predicted_and_actual(scores, data)
-        # self.graphics_pettitt_test(data)
+        self.graphics_pettitt_test(data)
 
     def graphics_export(self, data):
         # GRÁFICO DE EXPORTAÇÃO EM DECORRÊNCIA DOS ANOS
